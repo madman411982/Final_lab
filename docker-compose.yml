@@ -1,0 +1,79 @@
+version: "3.7"
+
+services:
+
+  rabbitmq-1:
+    image: rabbitmq-1
+    hostname: rabbitmq1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5672:5672
+      - 15672:15672
+      - 5671:5671
+      - 15671:15671
+      - 15692:15692
+      - 4369:4369
+      - 25672:25672
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - ./rabbit_logs1:/var/log/rabbitmq
+
+  rabbitmq-2:
+    image: rabbitmq-2
+    hostname: rabbitmq2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5674:5672
+      - 15674:15672
+      - 5675:5671
+      - 15675:15671
+      - 15694:15692
+      - 4370:4369
+      - 25674:25672
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - ./rabbit_logs2:/var/log/rabbitmq
+
+  rabbitmq-3:
+    image: rabbitmq-3
+    hostname: rabbitmq3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5676:5672
+      - 15676:15672
+      - 5677:5671
+      - 15677:15671
+      - 15695:15692
+      - 4371:4369
+      - 25675:25672
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - ./rabbit_logs3:/var/log/rabbitmq
+  
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  
+  grafana:
+    image: grafana/grafana-oss:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana_dashboards:/dashboards
+      - ./grafana-dashboards.yml:/etc/grafana/provisioning/dashboards/rabbitmq.yml
+      - ./grafana-datasources.yml:/etc/grafana/provisioning/dashboards/datasources/prometheus.yml

@@ -1,0 +1,1 @@
+2023-02-01 18:25:33.119271+00:00 [info] <0.3831.0> Closing all connections in vhost 'dev' on node 'rabbit@rabbitmq3' because the vhost is stopping

@@ -1,0 +1,775 @@
+2023-02-01 16:02:08.857724+00:00 [notice] <0.222.0> Logging: configured log handlers are now ACTIVE
+2023-02-01 16:02:08.859020+00:00 [debug] <0.222.0> 
+2023-02-01 16:02:08.859020+00:00 [debug] <0.222.0> == Clustering ==
+2023-02-01 16:02:08.859231+00:00 [debug] <0.222.0> Preparing cluster status files
+2023-02-01 16:02:08.879740+00:00 [debug] <0.227.0> Could not declare exchange 'amq.rabbitmq.log' in vhost '/', reason: exit:{aborted,{no_exists,[rabbit_vhost,<<"/">>]}}
+2023-02-01 16:02:08.879825+00:00 [debug] <0.227.0> Logging to exchange 'amq.rabbitmq.log' in vhost '/' not ready, trying again in 5 second(s)
+2023-02-01 16:02:08.939507+00:00 [debug] <0.222.0> Upgrading Mnesia schema
+2023-02-01 16:02:13.880667+00:00 [debug] <0.227.0> Could not declare exchange 'amq.rabbitmq.log' in vhost '/', reason: exit:{aborted,{no_exists,[rabbit_vhost,<<"/">>]}}
+2023-02-01 16:02:13.880747+00:00 [debug] <0.227.0> Logging to exchange 'amq.rabbitmq.log' in vhost '/' not ready, trying again in 5 second(s)
+2023-02-01 16:02:15.367980+00:00 [debug] <0.222.0> Checking cluster consistency
+2023-02-01 16:02:15.388212+00:00 [debug] <0.222.0> Starting Mnesia
+2023-02-01 16:02:15.416260+00:00 [debug] <0.222.0> Starting Ra systems
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0> Starting Ra system called "quorum_queues" with configuration:
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0> #{data_dir =>
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>       "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/quorum/rabbit@rabbitmq2",
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   name => quorum_queues,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   names =>
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>       #{closed_mem_tbls => ra_log_closed_mem_tables,directory => ra_directory,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         directory_rev => ra_directory_reverse,log_ets => ra_log_ets,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         log_meta => ra_log_meta,log_sup => ra_log_sup,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         open_mem_tbls => ra_log_open_mem_tables,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         segment_writer => ra_log_segment_writer,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         server_sup => ra_server_sup_sup,wal => ra_log_wal,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>         wal_sup => ra_log_wal_sup},
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   segment_compute_checksums => true,segment_max_entries => 4096,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_compute_checksums => true,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_data_dir =>
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>       "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/quorum/rabbit@rabbitmq2",
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_garbage_collect => false,wal_max_batch_size => 4096,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_max_entries => undefined,wal_max_size_bytes => 536870912,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_pre_allocate => false,wal_sync_method => datasync,
+2023-02-01 16:02:15.416310+00:00 [debug] <0.222.0>   wal_write_strategy => default}
+2023-02-01 16:02:15.416608+00:00 [info] <0.222.0> ra: starting system quorum_queues
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0> ra: starting system quorum_queues with config: #{data_dir =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/quorum/rabbit@rabbitmq2",
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  name => quorum_queues,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  names =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      #{closed_mem_tbls =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_log_closed_mem_tables,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        directory =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_directory,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        directory_rev =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_directory_reverse,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        log_ets => ra_log_ets,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        log_meta => ra_log_meta,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        log_sup => ra_log_sup,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        open_mem_tbls =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_log_open_mem_tables,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        segment_writer =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_log_segment_writer,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        server_sup =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_server_sup_sup,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        wal => ra_log_wal,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                        wal_sup =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                            ra_log_wal_sup},
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  segment_compute_checksums =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      true,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  segment_max_entries => 4096,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_compute_checksums => true,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_data_dir =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/quorum/rabbit@rabbitmq2",
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_garbage_collect => false,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_max_batch_size => 4096,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_max_entries => undefined,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_max_size_bytes =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      536870912,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_pre_allocate => false,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_sync_method => datasync,
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                  wal_write_strategy =>
+2023-02-01 16:02:15.416801+00:00 [debug] <0.222.0>                                                      default}
+2023-02-01 16:02:15.417974+00:00 [info] <0.222.0> starting Ra system: quorum_queues in directory: /var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/quorum/rabbit@rabbitmq2
+2023-02-01 16:02:15.426592+00:00 [info] <0.307.0> ra system 'quorum_queues' running pre init for 0 registered servers
+2023-02-01 16:02:15.428793+00:00 [info] <0.308.0> ra: meta data store initialised for system quorum_queues. 0 record(s) recovered
+2023-02-01 16:02:15.429242+00:00 [notice] <0.315.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables
+2023-02-01 16:02:15.431500+00:00 [debug] <0.315.0> wal: recovering 00000003.wal
+2023-02-01 16:02:15.433154+00:00 [debug] <0.315.0> wal: recovered 00000003.wal time taken 0ms
+2023-02-01 16:02:15.433817+00:00 [debug] <0.315.0> wal: opening new file 00000004.wal open mem tables: #Ref<0.3415815337.305004546.159978>
+2023-02-01 16:02:15.435394+00:00 [debug] <0.313.0> segment_writer: deleting wal file: 00000003.wal
+2023-02-01 16:02:15.436476+00:00 [debug] <0.222.0> Ra system "quorum_queues" ready
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0> Starting Ra system called "coordination" with configuration:
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0> #{data_dir =>
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>       "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/coordination/rabbit@rabbitmq2",
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   name => coordination,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   names =>
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>       #{closed_mem_tbls => ra_coordination_log_closed_mem_tables,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         directory => ra_coordination_directory,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         directory_rev => ra_coordination_directory_reverse,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         log_ets => ra_coordination_log_ets,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         log_meta => ra_coordination_log_meta,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         log_sup => ra_coordination_log_sup,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         open_mem_tbls => ra_coordination_log_open_mem_tables,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         segment_writer => ra_coordination_segment_writer,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         server_sup => ra_coordination_server_sup_sup,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>         wal => ra_coordination_log_wal,wal_sup => ra_coordination_log_wal_sup},
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   segment_compute_checksums => true,segment_max_entries => 4096,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_compute_checksums => true,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_data_dir =>
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>       "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/coordination/rabbit@rabbitmq2",
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_garbage_collect => false,wal_max_batch_size => 4096,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_max_entries => undefined,wal_max_size_bytes => 64000000,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_pre_allocate => false,wal_sync_method => datasync,
+2023-02-01 16:02:15.436570+00:00 [debug] <0.222.0>   wal_write_strategy => default}
+2023-02-01 16:02:15.436788+00:00 [info] <0.222.0> ra: starting system coordination
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0> ra: starting system coordination with config: #{data_dir =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                     "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/coordination/rabbit@rabbitmq2",
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 name => coordination,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 names =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                     #{closed_mem_tbls =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_closed_mem_tables,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       directory =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_directory,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       directory_rev =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_directory_reverse,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       log_ets =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_ets,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       log_meta =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_meta,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       log_sup =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_sup,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       open_mem_tbls =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_open_mem_tables,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       segment_writer =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_segment_writer,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       server_sup =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_server_sup_sup,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       wal =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_wal,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                       wal_sup =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                           ra_coordination_log_wal_sup},
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 segment_compute_checksums =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                     true,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 segment_max_entries => 4096,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_compute_checksums => true,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_data_dir =>
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                     "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/coordination/rabbit@rabbitmq2",
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_garbage_collect => false,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_max_batch_size => 4096,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_max_entries => undefined,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_max_size_bytes => 64000000,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_pre_allocate => false,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_sync_method => datasync,
+2023-02-01 16:02:15.436849+00:00 [debug] <0.222.0>                                                 wal_write_strategy => default}
+2023-02-01 16:02:15.437203+00:00 [info] <0.222.0> starting Ra system: coordination in directory: /var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/coordination/rabbit@rabbitmq2
+2023-02-01 16:02:15.439282+00:00 [info] <0.325.0> ra system 'coordination' running pre init for 0 registered servers
+2023-02-01 16:02:15.444837+00:00 [info] <0.326.0> ra: meta data store initialised for system coordination. 0 record(s) recovered
+2023-02-01 16:02:15.445833+00:00 [notice] <0.331.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables
+2023-02-01 16:02:15.448669+00:00 [debug] <0.331.0> wal: recovering 00000003.wal
+2023-02-01 16:02:15.448961+00:00 [debug] <0.331.0> wal: recovered 00000003.wal time taken 0ms
+2023-02-01 16:02:15.449053+00:00 [debug] <0.331.0> wal: opening new file 00000004.wal open mem tables: #Ref<0.3415815337.305004546.160034>
+2023-02-01 16:02:15.449263+00:00 [debug] <0.329.0> segment_writer: deleting wal file: 00000003.wal
+2023-02-01 16:02:15.452116+00:00 [debug] <0.222.0> Ra system "coordination" ready
+2023-02-01 16:02:15.452269+00:00 [debug] <0.222.0> Ra systems started
+2023-02-01 16:02:15.452396+00:00 [debug] <0.222.0> 
+2023-02-01 16:02:15.452411+00:00 [debug] <0.222.0> == Prelaunch DONE ==
+2023-02-01 16:02:15.455983+00:00 [info] <0.222.0> 
+2023-02-01 16:02:15.455983+00:00 [info] <0.222.0>  Starting RabbitMQ 3.10.7 on Erlang 25.0.4 [jit]
+2023-02-01 16:02:15.455983+00:00 [info] <0.222.0>  Copyright (c) 2007-2022 VMware, Inc. or its affiliates.
+2023-02-01 16:02:15.455983+00:00 [info] <0.222.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2023-02-01 16:02:15.456729+00:00 [debug] <0.222.0> Register `rabbit` process (<0.222.0>) for rabbit_node_monitor
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0> 
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  node           : rabbit@rabbitmq2
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  home dir       : /var/lib/rabbitmq
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  config file(s) : /etc/rabbitmq/rabbitmq.conf
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>                 : /etc/rabbitmq/conf.d/10-defaults.conf
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  cookie hash    : 4yaWkXOu6XHn1X1iykebJg==
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  log(s)         : /var/log/rabbitmq/connection.log
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>                 : /var/log/rabbitmq/rabbit@rabbitmq2.log
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>                 : /var/log/rabbitmq/rabbit@rabbitmq2_upgrade.log
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>                 : <stdout>
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>                 : exchange:{resource,<<"/">>,exchange,<<"amq.rabbitmq.log">>}
+2023-02-01 16:02:15.463181+00:00 [info] <0.222.0>  database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq2
+2023-02-01 16:02:15.463395+00:00 [debug] <0.222.0> 
+2023-02-01 16:02:15.463415+00:00 [debug] <0.222.0> == Plugins (prelaunch phase) ==
+2023-02-01 16:02:15.463425+00:00 [debug] <0.222.0> Setting plugins up
+2023-02-01 16:02:15.610112+00:00 [debug] <0.222.0> Plugins discovery: ignoring getopt, not a RabbitMQ plugin
+2023-02-01 16:02:15.610177+00:00 [debug] <0.222.0> Plugins discovery: ignoring quantile_estimator, not a RabbitMQ plugin
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0> Loading the following plugins: [rabbitmq_management_agent,cowlib,cowboy,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_web_dispatch,amqp_client,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_management,prometheus,amqp10_client,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_shovel,accept,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_auth_mechanism_ssl,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_shovel_management,
+2023-02-01 16:02:15.715347+00:00 [debug] <0.222.0>                                 rabbitmq_prometheus]
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0> Feature flags: new apps loaded: [rabbitmq_management_agent,cowlib,cowboy,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_web_dispatch,amqp_client,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_management,prometheus,amqp10_client,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_shovel,accept,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_auth_mechanism_ssl,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_shovel_management,
+2023-02-01 16:02:15.734359+00:00 [debug] <0.222.0>                                  rabbitmq_prometheus] -> refreshing feature flags
+2023-02-01 16:02:15.734673+00:00 [debug] <0.222.0> Feature flags: query feature flags in loaded applications
+2023-02-01 16:02:15.950740+00:00 [debug] <0.222.0> Feature flags: time to find supported feature flags: 215949 us
+2023-02-01 16:02:15.950793+00:00 [debug] <0.222.0> Feature flags: application `rabbitmq_management_agent` has 2 feature flags
+2023-02-01 16:02:15.950811+00:00 [debug] <0.222.0> Feature flags: application `rabbit` has 7 feature flags
+2023-02-01 16:02:15.950898+00:00 [debug] <0.222.0> Feature flags: new apps loaded: new feature flags (unseen so far): [drop_unroutable_metric,
+2023-02-01 16:02:15.950898+00:00 [debug] <0.222.0>                                                                     empty_basic_get_metric]
+2023-02-01 16:02:15.951045+00:00 [debug] <0.222.0> Feature flags: query feature flags in loaded applications
+2023-02-01 16:02:15.951635+00:00 [debug] <0.222.0> Feature flags: time to find supported feature flags: 529 us
+2023-02-01 16:02:15.951687+00:00 [debug] <0.222.0> Feature flags: application `rabbitmq_management_agent` has 2 feature flags
+2023-02-01 16:02:15.951710+00:00 [debug] <0.222.0> Feature flags: application `rabbit` has 7 feature flags
+2023-02-01 16:02:15.951726+00:00 [debug] <0.222.0> Feature flags: registry refresh needed: yes, list of feature flags differs
+2023-02-01 16:02:15.951737+00:00 [debug] <0.222.0> Feature flags: (re)initialize registry (<0.222.0>)
+2023-02-01 16:02:15.951747+00:00 [info] <0.222.0> Feature flags: list of feature flags found:
+2023-02-01 16:02:15.951799+00:00 [info] <0.222.0> Feature flags:   [x] classic_mirrored_queue_version
+2023-02-01 16:02:15.951835+00:00 [info] <0.222.0> Feature flags:   [x] drop_unroutable_metric
+2023-02-01 16:02:15.951949+00:00 [info] <0.222.0> Feature flags:   [x] empty_basic_get_metric
+2023-02-01 16:02:15.952091+00:00 [info] <0.222.0> Feature flags:   [x] implicit_default_bindings
+2023-02-01 16:02:15.952547+00:00 [info] <0.222.0> Feature flags:   [x] maintenance_mode_status
+2023-02-01 16:02:15.952599+00:00 [info] <0.222.0> Feature flags:   [x] quorum_queue
+2023-02-01 16:02:15.953680+00:00 [info] <0.222.0> Feature flags:   [x] stream_queue
+2023-02-01 16:02:15.953764+00:00 [info] <0.222.0> Feature flags:   [x] user_limits
+2023-02-01 16:02:15.954839+00:00 [info] <0.222.0> Feature flags:   [x] virtual_host_metadata
+2023-02-01 16:02:15.954944+00:00 [info] <0.222.0> Feature flags: feature flag states written to disk: yes
+2023-02-01 16:02:15.961011+00:00 [debug] <0.222.0> Feature flags: registry module ready, loading it (<0.222.0>)...
+2023-02-01 16:02:15.961331+00:00 [debug] <0.222.0> Feature flags: acquired lock before reloading registry module (<0.222.0>)
+2023-02-01 16:02:15.964374+00:00 [debug] <0.222.0> Feature flags: releasing lock after reloading registry module (<0.222.0>)
+2023-02-01 16:02:15.964462+00:00 [debug] <0.222.0> Feature flags: registry module loaded (vsn: [334421724785284656265557160020485391289] -> [140208935659915545846027727907271746179])
+2023-02-01 16:02:15.964501+00:00 [debug] <0.222.0> Feature flags: time to regen registry: 12753 µs
+2023-02-01 16:02:15.964567+00:00 [debug] <0.222.0> 
+2023-02-01 16:02:15.964590+00:00 [debug] <0.222.0> == Boot steps ==
+2023-02-01 16:02:16.432625+00:00 [info] <0.222.0> Running boot step pre_boot defined by app rabbit
+2023-02-01 16:02:16.432738+00:00 [info] <0.222.0> Running boot step rabbit_global_counters defined by app rabbit
+2023-02-01 16:02:16.432793+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_global_counters, F = boot_step, A = []
+2023-02-01 16:02:16.434077+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_global_counters, F = boot_step, A = []
+2023-02-01 16:02:16.434136+00:00 [info] <0.222.0> Running boot step rabbit_osiris_metrics defined by app rabbit
+2023-02-01 16:02:16.434173+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_child, A = [rabbit_osiris_metrics]
+2023-02-01 16:02:16.434261+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_child, A = [rabbit_osiris_metrics]
+2023-02-01 16:02:16.434389+00:00 [info] <0.222.0> Running boot step rabbit_core_metrics defined by app rabbit
+2023-02-01 16:02:16.434595+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_child, A = [rabbit_metrics]
+2023-02-01 16:02:16.436721+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_child, A = [rabbit_metrics]
+2023-02-01 16:02:16.436861+00:00 [info] <0.222.0> Running boot step rabbit_alarm defined by app rabbit
+2023-02-01 16:02:16.436912+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_alarm, F = start, A = []
+2023-02-01 16:02:16.483756+00:00 [info] <0.353.0> Memory high watermark set to 1560 MiB (1636227481 bytes) of 3901 MiB (4090568704 bytes) total
+2023-02-01 16:02:16.501962+00:00 [info] <0.380.0> Enabling free disk space monitoring
+2023-02-01 16:02:16.502394+00:00 [info] <0.380.0> Disk free limit set to 50MB
+2023-02-01 16:02:16.517111+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_alarm, F = start, A = []
+2023-02-01 16:02:16.517165+00:00 [info] <0.222.0> Running boot step code_server_cache defined by app rabbit
+2023-02-01 16:02:16.517207+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_child, A = [code_server_cache]
+2023-02-01 16:02:16.517385+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_child, A = [code_server_cache]
+2023-02-01 16:02:16.517412+00:00 [info] <0.222.0> Running boot step file_handle_cache defined by app rabbit
+2023-02-01 16:02:16.517830+00:00 [debug] <0.222.0> Applying MFA: M = rabbit, F = start_fhc, A = []
+2023-02-01 16:02:16.518099+00:00 [info] <0.401.0> Limiting to approx 1048479 file handles (943629 sockets)
+2023-02-01 16:02:16.518201+00:00 [info] <0.402.0> FHC read buffering: OFF
+2023-02-01 16:02:16.518622+00:00 [info] <0.402.0> FHC write buffering: ON
+2023-02-01 16:02:16.520826+00:00 [debug] <0.222.0> Finished MFA: M = rabbit, F = start_fhc, A = []
+2023-02-01 16:02:16.520910+00:00 [info] <0.222.0> Running boot step worker_pool defined by app rabbit
+2023-02-01 16:02:16.520943+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_supervisor_child, A = [worker_pool_sup]
+2023-02-01 16:02:16.522604+00:00 [info] <0.333.0> Will use 2 processes for default worker pool
+2023-02-01 16:02:16.522690+00:00 [info] <0.333.0> Starting worker pool 'worker_pool' with 2 processes in it
+2023-02-01 16:02:16.523606+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_supervisor_child, A = [worker_pool_sup]
+2023-02-01 16:02:16.523701+00:00 [info] <0.222.0> Running boot step database defined by app rabbit
+2023-02-01 16:02:16.523758+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_mnesia, F = init, A = []
+2023-02-01 16:02:16.526121+00:00 [debug] <0.222.0> Files and directories found in node's data directory: DECISION_TAB.LOG, LATEST.LOG, cluster_nodes.config, coordination, msg_stores, nodes_running_at_shutdown, quorum, rabbit_durable_exchange.DCD, rabbit_durable_queue.DCD, rabbit_durable_route.DCD, rabbit_runtime_parameters.DCD, rabbit_serial, rabbit_topic_permission.DCD, rabbit_user.DCD, rabbit_user_permission.DCD, rabbit_vhost.DCD, schema.DAT, schema_version, of them to be ignored: cluster_nodes.config, coordination, nodes_running_at_shutdown, quorum, rabbit@rabbitmq2, rabbit@rabbitmq2-feature_flags
+2023-02-01 16:02:16.526199+00:00 [debug] <0.222.0> Files and directories found in node's data directory sans ignored ones: DECISION_TAB.LOG, LATEST.LOG, msg_stores, rabbit_durable_exchange.DCD, rabbit_durable_queue.DCD, rabbit_durable_route.DCD, rabbit_runtime_parameters.DCD, rabbit_serial, rabbit_topic_permission.DCD, rabbit_user.DCD, rabbit_user_permission.DCD, rabbit_vhost.DCD, schema.DAT, schema_version
+2023-02-01 16:02:16.528734+00:00 [debug] <0.222.0> Files and directories found in node's data directory: DECISION_TAB.LOG, LATEST.LOG, cluster_nodes.config, coordination, msg_stores, nodes_running_at_shutdown, quorum, rabbit_durable_exchange.DCD, rabbit_durable_queue.DCD, rabbit_durable_route.DCD, rabbit_runtime_parameters.DCD, rabbit_serial, rabbit_topic_permission.DCD, rabbit_user.DCD, rabbit_user_permission.DCD, rabbit_vhost.DCD, schema.DAT, schema_version, of them to be ignored: cluster_nodes.config, coordination, nodes_running_at_shutdown, quorum, rabbit@rabbitmq2, rabbit@rabbitmq2-feature_flags
+2023-02-01 16:02:16.528910+00:00 [debug] <0.222.0> Files and directories found in node's data directory sans ignored ones: DECISION_TAB.LOG, LATEST.LOG, msg_stores, rabbit_durable_exchange.DCD, rabbit_durable_queue.DCD, rabbit_durable_route.DCD, rabbit_runtime_parameters.DCD, rabbit_serial, rabbit_topic_permission.DCD, rabbit_user.DCD, rabbit_user_permission.DCD, rabbit_vhost.DCD, schema.DAT, schema_version
+2023-02-01 16:02:16.529019+00:00 [debug] <0.222.0> Does data directory looks like that of a blank (uninitialised) node? false
+2023-02-01 16:02:16.534419+00:00 [info] <0.222.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-02-01 16:02:16.545991+00:00 [info] <0.222.0> Successfully synced tables from a peer
+2023-02-01 16:02:16.547743+00:00 [debug] <0.222.0> Feature flags: double-checking feature flag states...
+2023-02-01 16:02:16.547829+00:00 [debug] <0.222.0> Feature flag `classic_mirrored_queue_version`: run migration function classic_mirrored_queue_version_migration with arg: is_enabled
+2023-02-01 16:02:16.547861+00:00 [debug] <0.222.0> Feature flag `implicit_default_bindings`: run migration function implicit_default_bindings_migration with arg: is_enabled
+2023-02-01 16:02:16.547973+00:00 [debug] <0.222.0> Feature flag `maintenance_mode_status`: run migration function maintenance_mode_status_migration with arg: is_enabled
+2023-02-01 16:02:16.548235+00:00 [debug] <0.222.0> Feature flag `quorum_queue`: run migration function quorum_queue_migration with arg: is_enabled
+2023-02-01 16:02:16.548324+00:00 [info] <0.222.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-02-01 16:02:16.548373+00:00 [info] <0.222.0> Successfully synced tables from a peer
+2023-02-01 16:02:16.550120+00:00 [debug] <0.222.0> Feature flag `stream_queue`: run migration function stream_queue_migration with arg: is_enabled
+2023-02-01 16:02:16.550178+00:00 [debug] <0.222.0> Feature flag `user_limits`: run migration function user_limits_migration with arg: is_enabled
+2023-02-01 16:02:16.550210+00:00 [debug] <0.222.0> Feature flag `virtual_host_metadata`: run migration function virtual_host_metadata_migration with arg: is_enabled
+2023-02-01 16:02:16.550240+00:00 [debug] <0.222.0> Feature flags: SYNCING FEATURE FLAGS with node `rabbit@rabbitmq1`...
+2023-02-01 16:02:16.550282+00:00 [debug] <0.222.0> Feature flags: querying enabled feature flags on node `rabbit@rabbitmq1`...
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0> Feature flags: querying enabled feature flags on node `rabbit@rabbitmq1` done; enabled features: [classic_mirrored_queue_version,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   drop_unroutable_metric,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   empty_basic_get_metric,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   implicit_default_bindings,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   maintenance_mode_status,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   quorum_queue,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   stream_queue,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   user_limits,
+2023-02-01 16:02:16.553009+00:00 [debug] <0.222.0>                                                                                                   virtual_host_metadata]
+2023-02-01 16:02:16.553492+00:00 [debug] <0.222.0> Feature flags: enabling locally feature flags already enabled on node `rabbit@rabbitmq1`...
+2023-02-01 16:02:16.553534+00:00 [debug] <0.222.0> Feature flags: enabling on node `rabbit@rabbitmq1` feature flags already enabled locally...
+2023-02-01 16:02:16.555110+00:00 [info] <0.222.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-02-01 16:02:16.556027+00:00 [info] <0.222.0> Successfully synced tables from a peer
+2023-02-01 16:02:16.577187+00:00 [info] <0.222.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2023-02-01 16:02:16.577408+00:00 [info] <0.222.0> Successfully synced tables from a peer
+2023-02-01 16:02:16.577967+00:00 [debug] <0.222.0> Peer discovery backend does not support initialisation
+2023-02-01 16:02:16.577982+00:00 [info] <0.222.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2023-02-01 16:02:16.578061+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_mnesia, F = init, A = []
+2023-02-01 16:02:16.578077+00:00 [info] <0.222.0> Running boot step database_sync defined by app rabbit
+2023-02-01 16:02:16.578099+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_child, A = [mnesia_sync]
+2023-02-01 16:02:16.578154+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_child, A = [mnesia_sync]
+2023-02-01 16:02:16.578174+00:00 [info] <0.222.0> Running boot step feature_flags defined by app rabbit
+2023-02-01 16:02:16.578197+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_feature_flags, F = init, A = []
+2023-02-01 16:02:16.578864+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_feature_flags, F = init, A = []
+2023-02-01 16:02:16.578886+00:00 [info] <0.222.0> Running boot step codec_correctness_check defined by app rabbit
+2023-02-01 16:02:16.578910+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_binary_generator, F = check_empty_frame_size, A = []
+2023-02-01 16:02:16.578943+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_binary_generator, F = check_empty_frame_size, A = []
+2023-02-01 16:02:16.578956+00:00 [info] <0.222.0> Running boot step external_infrastructure defined by app rabbit
+2023-02-01 16:02:16.578990+00:00 [info] <0.222.0> Running boot step rabbit_event defined by app rabbit
+2023-02-01 16:02:16.579111+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_event]
+2023-02-01 16:02:16.579540+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_event]
+2023-02-01 16:02:16.579568+00:00 [info] <0.222.0> Running boot step rabbit_registry defined by app rabbit
+2023-02-01 16:02:16.579591+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_child, A = [rabbit_registry]
+2023-02-01 16:02:16.579648+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_child, A = [rabbit_registry]
+2023-02-01 16:02:16.579666+00:00 [info] <0.222.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2023-02-01 16:02:16.579695+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.579695+00:00 [debug] <0.222.0>                                                       <<"AMQPLAIN">>,
+2023-02-01 16:02:16.579695+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_amqplain]
+2023-02-01 16:02:16.579738+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.579738+00:00 [debug] <0.222.0>                                                       <<"AMQPLAIN">>,
+2023-02-01 16:02:16.579738+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_amqplain]
+2023-02-01 16:02:16.579759+00:00 [info] <0.222.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2023-02-01 16:02:16.579785+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.579785+00:00 [debug] <0.222.0>                                                       <<"RABBIT-CR-DEMO">>,
+2023-02-01 16:02:16.579785+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_cr_demo]
+2023-02-01 16:02:16.579872+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.579872+00:00 [debug] <0.222.0>                                                       <<"RABBIT-CR-DEMO">>,
+2023-02-01 16:02:16.579872+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_cr_demo]
+2023-02-01 16:02:16.579972+00:00 [info] <0.222.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2023-02-01 16:02:16.580014+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.580014+00:00 [debug] <0.222.0>                                                       <<"PLAIN">>,
+2023-02-01 16:02:16.580014+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_plain]
+2023-02-01 16:02:16.580537+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.580537+00:00 [debug] <0.222.0>                                                       <<"PLAIN">>,
+2023-02-01 16:02:16.580537+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_plain]
+2023-02-01 16:02:16.581277+00:00 [info] <0.222.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2023-02-01 16:02:16.581325+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [exchange,<<"direct">>,
+2023-02-01 16:02:16.581325+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_direct]
+2023-02-01 16:02:16.581872+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [exchange,<<"direct">>,
+2023-02-01 16:02:16.581872+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_direct]
+2023-02-01 16:02:16.581941+00:00 [info] <0.222.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2023-02-01 16:02:16.582016+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [exchange,<<"fanout">>,
+2023-02-01 16:02:16.582016+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_fanout]
+2023-02-01 16:02:16.582164+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [exchange,<<"fanout">>,
+2023-02-01 16:02:16.582164+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_fanout]
+2023-02-01 16:02:16.582218+00:00 [info] <0.222.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2023-02-01 16:02:16.582294+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [exchange,<<"headers">>,
+2023-02-01 16:02:16.582294+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_headers]
+2023-02-01 16:02:16.582389+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [exchange,<<"headers">>,
+2023-02-01 16:02:16.582389+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_headers]
+2023-02-01 16:02:16.582419+00:00 [info] <0.222.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2023-02-01 16:02:16.582463+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [exchange,<<"topic">>,
+2023-02-01 16:02:16.582463+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_topic]
+2023-02-01 16:02:16.582514+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [exchange,<<"topic">>,
+2023-02-01 16:02:16.582514+00:00 [debug] <0.222.0>                                                       rabbit_exchange_type_topic]
+2023-02-01 16:02:16.582561+00:00 [info] <0.222.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2023-02-01 16:02:16.582601+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"all">>,
+2023-02-01 16:02:16.582601+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_all]
+2023-02-01 16:02:16.582653+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"all">>,
+2023-02-01 16:02:16.582653+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_all]
+2023-02-01 16:02:16.582674+00:00 [info] <0.222.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2023-02-01 16:02:16.584713+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"exactly">>,
+2023-02-01 16:02:16.584713+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_exactly]
+2023-02-01 16:02:16.585183+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"exactly">>,
+2023-02-01 16:02:16.585183+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_exactly]
+2023-02-01 16:02:16.585218+00:00 [info] <0.222.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2023-02-01 16:02:16.585259+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"nodes">>,
+2023-02-01 16:02:16.585259+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_nodes]
+2023-02-01 16:02:16.585301+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [ha_mode,<<"nodes">>,
+2023-02-01 16:02:16.585301+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_mode_nodes]
+2023-02-01 16:02:16.585321+00:00 [info] <0.222.0> Running boot step rabbit_priority_queue defined by app rabbit
+2023-02-01 16:02:16.585348+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_priority_queue, F = enable, A = []
+2023-02-01 16:02:16.585363+00:00 [info] <0.222.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2023-02-01 16:02:16.585402+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_priority_queue, F = enable, A = []
+2023-02-01 16:02:16.585432+00:00 [info] <0.222.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2023-02-01 16:02:16.585467+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585467+00:00 [debug] <0.222.0>                                                       <<"client-local">>,
+2023-02-01 16:02:16.585467+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_client_local]
+2023-02-01 16:02:16.585501+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585501+00:00 [debug] <0.222.0>                                                       <<"client-local">>,
+2023-02-01 16:02:16.585501+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_client_local]
+2023-02-01 16:02:16.585522+00:00 [info] <0.222.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2023-02-01 16:02:16.585551+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585551+00:00 [debug] <0.222.0>                                                       <<"min-masters">>,
+2023-02-01 16:02:16.585551+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_min_masters]
+2023-02-01 16:02:16.585586+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585586+00:00 [debug] <0.222.0>                                                       <<"min-masters">>,
+2023-02-01 16:02:16.585586+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_min_masters]
+2023-02-01 16:02:16.585607+00:00 [info] <0.222.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2023-02-01 16:02:16.585637+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585637+00:00 [debug] <0.222.0>                                                       <<"random">>,
+2023-02-01 16:02:16.585637+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_random]
+2023-02-01 16:02:16.585663+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [queue_master_locator,
+2023-02-01 16:02:16.585663+00:00 [debug] <0.222.0>                                                       <<"random">>,
+2023-02-01 16:02:16.585663+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_random]
+2023-02-01 16:02:16.585683+00:00 [info] <0.222.0> Running boot step rabbit_auth_mechanism_ssl defined by app rabbitmq_auth_mechanism_ssl
+2023-02-01 16:02:16.585713+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.585713+00:00 [debug] <0.222.0>                                                       <<"EXTERNAL">>,
+2023-02-01 16:02:16.585713+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_ssl]
+2023-02-01 16:02:16.585747+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [auth_mechanism,
+2023-02-01 16:02:16.585747+00:00 [debug] <0.222.0>                                                       <<"EXTERNAL">>,
+2023-02-01 16:02:16.585747+00:00 [debug] <0.222.0>                                                       rabbit_auth_mechanism_ssl]
+2023-02-01 16:02:16.585768+00:00 [info] <0.222.0> Running boot step kernel_ready defined by app rabbit
+2023-02-01 16:02:16.585793+00:00 [info] <0.222.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2023-02-01 16:02:16.585816+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_sysmon_minder]
+2023-02-01 16:02:16.595698+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_sysmon_minder]
+2023-02-01 16:02:16.595751+00:00 [info] <0.222.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2023-02-01 16:02:16.595797+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_epmd_monitor]
+2023-02-01 16:02:16.597706+00:00 [info] <0.436.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2023-02-01 16:02:16.597832+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_epmd_monitor]
+2023-02-01 16:02:16.597889+00:00 [info] <0.222.0> Running boot step guid_generator defined by app rabbit
+2023-02-01 16:02:16.598769+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_guid]
+2023-02-01 16:02:16.603920+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_guid]
+2023-02-01 16:02:16.604012+00:00 [info] <0.222.0> Running boot step rabbit_node_monitor defined by app rabbit
+2023-02-01 16:02:16.604068+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_node_monitor]
+2023-02-01 16:02:16.607849+00:00 [info] <0.440.0> Starting rabbit_node_monitor
+2023-02-01 16:02:16.608510+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_node_monitor]
+2023-02-01 16:02:16.608562+00:00 [info] <0.222.0> Running boot step delegate_sup defined by app rabbit
+2023-02-01 16:02:16.608593+00:00 [debug] <0.222.0> Applying MFA: M = rabbit, F = boot_delegate, A = []
+2023-02-01 16:02:16.609043+00:00 [debug] <0.222.0> Finished MFA: M = rabbit, F = boot_delegate, A = []
+2023-02-01 16:02:16.609113+00:00 [info] <0.222.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2023-02-01 16:02:16.609157+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_memory_monitor]
+2023-02-01 16:02:16.609645+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_memory_monitor]
+2023-02-01 16:02:16.609678+00:00 [info] <0.222.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit
+2023-02-01 16:02:16.609716+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_supervisor_child, A = [rabbit_fifo_dlx_sup]
+2023-02-01 16:02:16.609914+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_supervisor_child, A = [rabbit_fifo_dlx_sup]
+2023-02-01 16:02:16.609953+00:00 [info] <0.222.0> Running boot step core_initialized defined by app rabbit
+2023-02-01 16:02:16.609995+00:00 [info] <0.222.0> Running boot step upgrade_queues defined by app rabbit
+2023-02-01 16:02:16.610019+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_upgrade, F = maybe_migrate_queues_to_per_vhost_storage, A = []
+2023-02-01 16:02:16.632842+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_upgrade, F = maybe_migrate_queues_to_per_vhost_storage, A = []
+2023-02-01 16:02:16.632944+00:00 [info] <0.222.0> Running boot step channel_tracking defined by app rabbit
+2023-02-01 16:02:16.633424+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_channel_tracking, F = boot, A = []
+2023-02-01 16:02:16.635104+00:00 [info] <0.222.0> Setting up a table for channel tracking on this node: tracked_channel_on_node_rabbit@rabbitmq2
+2023-02-01 16:02:16.635831+00:00 [info] <0.222.0> Setting up a table for channel tracking on this node: tracked_channel_table_per_user_on_node_rabbit@rabbitmq2
+2023-02-01 16:02:16.636002+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_channel_tracking, F = boot, A = []
+2023-02-01 16:02:16.636031+00:00 [info] <0.222.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+2023-02-01 16:02:16.636076+00:00 [debug] <0.222.0> Applying MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.636076+00:00 [debug] <0.222.0>                                                    rabbit_channel_tracking_handler,
+2023-02-01 16:02:16.636076+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.636120+00:00 [debug] <0.222.0> Finished MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.636120+00:00 [debug] <0.222.0>                                                    rabbit_channel_tracking_handler,
+2023-02-01 16:02:16.636120+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.636497+00:00 [info] <0.222.0> Running boot step connection_tracking defined by app rabbit
+2023-02-01 16:02:16.636698+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_connection_tracking, F = boot, A = []
+2023-02-01 16:02:16.637970+00:00 [info] <0.222.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq2
+2023-02-01 16:02:16.638948+00:00 [info] <0.222.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq2
+2023-02-01 16:02:16.640492+00:00 [info] <0.222.0> Setting up a table for per-user connection counting on this node: tracked_connection_table_per_user_on_node_rabbit@rabbitmq2
+2023-02-01 16:02:16.641863+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_connection_tracking, F = boot, A = []
+2023-02-01 16:02:16.641914+00:00 [info] <0.222.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2023-02-01 16:02:16.641978+00:00 [debug] <0.222.0> Applying MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.641978+00:00 [debug] <0.222.0>                                                    rabbit_connection_tracking_handler,
+2023-02-01 16:02:16.641978+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.642028+00:00 [debug] <0.222.0> Finished MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.642028+00:00 [debug] <0.222.0>                                                    rabbit_connection_tracking_handler,
+2023-02-01 16:02:16.642028+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.642050+00:00 [info] <0.222.0> Running boot step rabbit_definitions_hashing defined by app rabbit
+2023-02-01 16:02:16.642085+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_definitions_hashing, F = register, A = []
+2023-02-01 16:02:16.643379+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_definitions_hashing, F = register, A = []
+2023-02-01 16:02:16.643413+00:00 [info] <0.222.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2023-02-01 16:02:16.643458+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_exchange_parameters, F = register, A = []
+2023-02-01 16:02:16.643544+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_exchange_parameters, F = register, A = []
+2023-02-01 16:02:16.643568+00:00 [info] <0.222.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2023-02-01 16:02:16.643717+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.643717+00:00 [debug] <0.222.0>                                                       <<"ha-mode">>,
+2023-02-01 16:02:16.643717+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644102+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644102+00:00 [debug] <0.222.0>                                                       <<"ha-mode">>,
+2023-02-01 16:02:16.644102+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644128+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644128+00:00 [debug] <0.222.0>                                                       <<"ha-params">>,
+2023-02-01 16:02:16.644128+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644212+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644212+00:00 [debug] <0.222.0>                                                       <<"ha-params">>,
+2023-02-01 16:02:16.644212+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644253+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644253+00:00 [debug] <0.222.0>                                                       <<"ha-sync-mode">>,
+2023-02-01 16:02:16.644253+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644285+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644285+00:00 [debug] <0.222.0>                                                       <<"ha-sync-mode">>,
+2023-02-01 16:02:16.644285+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644305+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644305+00:00 [debug] <0.222.0>                                                       <<"ha-sync-batch-size">>,
+2023-02-01 16:02:16.644305+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644750+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644750+00:00 [debug] <0.222.0>                                                       <<"ha-sync-batch-size">>,
+2023-02-01 16:02:16.644750+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644792+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644792+00:00 [debug] <0.222.0>                                                       <<"ha-promote-on-shutdown">>,
+2023-02-01 16:02:16.644792+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644835+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644835+00:00 [debug] <0.222.0>                                                       <<"ha-promote-on-shutdown">>,
+2023-02-01 16:02:16.644835+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.644857+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.644857+00:00 [debug] <0.222.0>                                                       <<"ha-promote-on-failure">>,
+2023-02-01 16:02:16.644857+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.645025+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.645025+00:00 [debug] <0.222.0>                                                       <<"ha-promote-on-failure">>,
+2023-02-01 16:02:16.645025+00:00 [debug] <0.222.0>                                                       rabbit_mirror_queue_misc]
+2023-02-01 16:02:16.645249+00:00 [info] <0.222.0> Running boot step rabbit_policies defined by app rabbit
+2023-02-01 16:02:16.645293+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_policies, F = register, A = []
+2023-02-01 16:02:16.645825+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_policies, F = register, A = []
+2023-02-01 16:02:16.645853+00:00 [info] <0.222.0> Running boot step rabbit_policy defined by app rabbit
+2023-02-01 16:02:16.645883+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_policy, F = register, A = []
+2023-02-01 16:02:16.646057+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_policy, F = register, A = []
+2023-02-01 16:02:16.646084+00:00 [info] <0.222.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2023-02-01 16:02:16.646111+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.646111+00:00 [debug] <0.222.0>                                                       <<"queue-master-locator">>,
+2023-02-01 16:02:16.646111+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_validator]
+2023-02-01 16:02:16.646154+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_registry, F = register, A = [policy_validator,
+2023-02-01 16:02:16.646154+00:00 [debug] <0.222.0>                                                       <<"queue-master-locator">>,
+2023-02-01 16:02:16.646154+00:00 [debug] <0.222.0>                                                       rabbit_queue_location_validator]
+2023-02-01 16:02:16.646182+00:00 [info] <0.222.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2023-02-01 16:02:16.646224+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_quorum_memory_manager, F = register, A = []
+2023-02-01 16:02:16.646250+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_quorum_memory_manager, F = register, A = []
+2023-02-01 16:02:16.646264+00:00 [info] <0.222.0> Running boot step rabbit_stream_coordinator defined by app rabbit
+2023-02-01 16:02:16.646297+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_stream_coordinator, F = recover, A = []
+2023-02-01 16:02:16.648249+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_stream_coordinator, F = recover, A = []
+2023-02-01 16:02:16.648300+00:00 [info] <0.222.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2023-02-01 16:02:16.648333+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_vhost_limit, F = register, A = []
+2023-02-01 16:02:16.648462+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_vhost_limit, F = register, A = []
+2023-02-01 16:02:16.648538+00:00 [info] <0.222.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2023-02-01 16:02:16.648625+00:00 [debug] <0.222.0> Applying MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.648625+00:00 [debug] <0.222.0>                                                    rabbit_mgmt_reset_handler,
+2023-02-01 16:02:16.648625+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.649064+00:00 [debug] <0.222.0> Finished MFA: M = gen_event, F = add_handler, A = [rabbit_event,
+2023-02-01 16:02:16.649064+00:00 [debug] <0.222.0>                                                    rabbit_mgmt_reset_handler,
+2023-02-01 16:02:16.649064+00:00 [debug] <0.222.0>                                                    []]
+2023-02-01 16:02:16.649101+00:00 [info] <0.222.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2023-02-01 16:02:16.649139+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_mgmt_db_handler, F = add_handler, A = []
+2023-02-01 16:02:16.649158+00:00 [info] <0.222.0> Management plugin: using rates mode 'basic'
+2023-02-01 16:02:16.650597+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_mgmt_db_handler, F = add_handler, A = []
+2023-02-01 16:02:16.650638+00:00 [info] <0.222.0> Running boot step rabbit_shovel_parameters defined by app rabbitmq_shovel
+2023-02-01 16:02:16.650743+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_shovel_parameters, F = register, A = []
+2023-02-01 16:02:16.650793+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_shovel_parameters, F = register, A = []
+2023-02-01 16:02:16.650809+00:00 [info] <0.222.0> Running boot step recovery defined by app rabbit
+2023-02-01 16:02:16.650832+00:00 [debug] <0.222.0> Applying MFA: M = rabbit, F = recover, A = []
+2023-02-01 16:02:16.652285+00:00 [debug] <0.222.0> rabbit_binding:recover/0 completed in 0.000237s
+2023-02-01 16:02:16.652450+00:00 [debug] <0.480.0> Recovering data for VHost <<"/">>
+2023-02-01 16:02:16.652501+00:00 [info] <0.480.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2023-02-01 16:02:16.661221+00:00 [info] <0.480.0> Starting message stores for vhost '/'
+2023-02-01 16:02:16.673525+00:00 [info] <0.485.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2023-02-01 16:02:16.678776+00:00 [debug] <0.485.0> Rebuilding message location index after unclean shutdown...
+2023-02-01 16:02:16.678837+00:00 [debug] <0.485.0> Rebuilding message refcount...
+2023-02-01 16:02:16.678853+00:00 [debug] <0.485.0> Done rebuilding message refcount
+2023-02-01 16:02:16.679394+00:00 [debug] <0.406.0> Rebuilding message location index from "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient/0.rdq" (0 file(s) remaining)
+2023-02-01 16:02:16.679583+00:00 [debug] <0.485.0> Finished rebuilding index
+2023-02-01 16:02:16.679747+00:00 [info] <0.480.0> Started message store of type transient for vhost '/'
+2023-02-01 16:02:16.679929+00:00 [info] <0.490.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2023-02-01 16:02:16.684886+00:00 [debug] <0.490.0> Rebuilding message location index after clean shutdown...
+2023-02-01 16:02:16.685053+00:00 [debug] <0.490.0> Finished rebuilding index
+2023-02-01 16:02:16.685568+00:00 [info] <0.480.0> Started message store of type persistent for vhost '/'
+2023-02-01 16:02:16.685755+00:00 [info] <0.480.0> Recovering 0 queues of type rabbit_classic_queue took 30ms
+2023-02-01 16:02:16.685802+00:00 [info] <0.480.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2023-02-01 16:02:16.685834+00:00 [info] <0.480.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2023-02-01 16:02:16.700192+00:00 [debug] <0.480.0> rabbit_binding:recover/2 for vhost / completed in 0.014323s
+2023-02-01 16:02:16.700460+00:00 [debug] <0.222.0> Finished MFA: M = rabbit, F = recover, A = []
+2023-02-01 16:02:16.700486+00:00 [info] <0.222.0> Running boot step empty_db_check defined by app rabbit
+2023-02-01 16:02:16.700513+00:00 [debug] <0.222.0> Applying MFA: M = rabbit, F = maybe_insert_default_data, A = []
+2023-02-01 16:02:16.700552+00:00 [info] <0.222.0> Will not seed default virtual host and user: have definitions to load...
+2023-02-01 16:02:16.700576+00:00 [debug] <0.222.0> Finished MFA: M = rabbit, F = maybe_insert_default_data, A = []
+2023-02-01 16:02:16.700657+00:00 [info] <0.222.0> Running boot step rabbit_looking_glass defined by app rabbit
+2023-02-01 16:02:16.700688+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_looking_glass, F = boot, A = []
+2023-02-01 16:02:16.700753+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_looking_glass, F = boot, A = []
+2023-02-01 16:02:16.700773+00:00 [info] <0.222.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2023-02-01 16:02:16.700952+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_core_metrics_gc]
+2023-02-01 16:02:16.703197+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [rabbit_core_metrics_gc]
+2023-02-01 16:02:16.703253+00:00 [info] <0.222.0> Running boot step background_gc defined by app rabbit
+2023-02-01 16:02:16.703437+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_sup, F = start_restartable_child, A = [background_gc]
+2023-02-01 16:02:16.703824+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_sup, F = start_restartable_child, A = [background_gc]
+2023-02-01 16:02:16.703910+00:00 [info] <0.222.0> Running boot step routing_ready defined by app rabbit
+2023-02-01 16:02:16.703972+00:00 [info] <0.222.0> Running boot step pre_flight defined by app rabbit
+2023-02-01 16:02:16.704007+00:00 [info] <0.222.0> Running boot step notify_cluster defined by app rabbit
+2023-02-01 16:02:16.704047+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_node_monitor, F = notify_node_up, A = []
+2023-02-01 16:02:16.704064+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_node_monitor, F = notify_node_up, A = []
+2023-02-01 16:02:16.704081+00:00 [info] <0.222.0> Running boot step networking defined by app rabbit
+2023-02-01 16:02:16.704123+00:00 [debug] <0.222.0> Applying MFA: M = logger, F = debug, A = ["'networking' boot step skipped and moved to end of startup",
+2023-02-01 16:02:16.704123+00:00 [debug] <0.222.0>                                           [],
+2023-02-01 16:02:16.704123+00:00 [debug] <0.222.0>                                           #{domain => [rabbitmq]}]
+2023-02-01 16:02:16.704249+00:00 [debug] <0.222.0> 'networking' boot step skipped and moved to end of startup
+2023-02-01 16:02:16.704932+00:00 [debug] <0.222.0> Finished MFA: M = logger, F = debug, A = ["'networking' boot step skipped and moved to end of startup",
+2023-02-01 16:02:16.704932+00:00 [debug] <0.222.0>                                           [],
+2023-02-01 16:02:16.704932+00:00 [debug] <0.222.0>                                           #{domain => [rabbitmq]}]
+2023-02-01 16:02:16.704995+00:00 [info] <0.222.0> Running boot step definition_import_worker_pool defined by app rabbit
+2023-02-01 16:02:16.705073+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_definitions, F = boot, A = []
+2023-02-01 16:02:16.705323+00:00 [info] <0.333.0> Starting worker pool 'definition_import_pool' with 2 processes in it
+2023-02-01 16:02:16.710055+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_definitions, F = boot, A = []
+2023-02-01 16:02:16.710184+00:00 [info] <0.222.0> Running boot step cluster_name defined by app rabbit
+2023-02-01 16:02:16.710233+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_nodes, F = boot, A = []
+2023-02-01 16:02:16.711118+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_nodes, F = boot, A = []
+2023-02-01 16:02:16.711162+00:00 [info] <0.222.0> Running boot step direct_client defined by app rabbit
+2023-02-01 16:02:16.711198+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_direct, F = boot, A = []
+2023-02-01 16:02:16.711326+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_direct, F = boot, A = []
+2023-02-01 16:02:16.711350+00:00 [info] <0.222.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit
+2023-02-01 16:02:16.711377+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_maintenance, F = boot, A = []
+2023-02-01 16:02:16.711483+00:00 [info] <0.222.0> Creating table rabbit_node_maintenance_states for feature flag `maintenance_mode_status`
+2023-02-01 16:02:16.711679+00:00 [debug] <0.222.0> Will create a schema database table 'rabbit_node_maintenance_states'
+2023-02-01 16:02:16.714652+00:00 [info] <0.440.0> rabbit on node rabbit@rabbitmq3 up
+2023-02-01 16:02:16.717696+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_maintenance, F = boot, A = []
+2023-02-01 16:02:16.717760+00:00 [info] <0.222.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2023-02-01 16:02:16.717911+00:00 [debug] <0.222.0> Applying MFA: M = rabbit_mgmt_load_definitions, F = boot, A = []
+2023-02-01 16:02:16.717930+00:00 [debug] <0.222.0> Will import definitions file from management.load_definitions
+2023-02-01 16:02:16.717944+00:00 [debug] <0.222.0> Finished MFA: M = rabbit_mgmt_load_definitions, F = boot, A = []
+2023-02-01 16:02:16.717964+00:00 [debug] <0.222.0> Change boot state to `core_started`
+2023-02-01 16:02:16.725256+00:00 [debug] <0.133.0> Boot state/systemd: sending non-systemd state (core_started) as status description: "Startup in progress (core ready, starting plugins)"
+2023-02-01 16:02:16.726454+00:00 [debug] <0.522.0> 
+2023-02-01 16:02:16.726490+00:00 [debug] <0.522.0> == Postlaunch phase ==
+2023-02-01 16:02:16.726516+00:00 [debug] <0.522.0> 
+2023-02-01 16:02:16.726530+00:00 [info] <0.522.0> Resetting node maintenance status
+2023-02-01 16:02:16.726571+00:00 [debug] <0.522.0> Unmarking the node as undergoing maintenance
+2023-02-01 16:02:16.728182+00:00 [debug] <0.522.0> 
+2023-02-01 16:02:16.728221+00:00 [debug] <0.522.0> == Plugins (postlaunch phase) ==
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0> Starting the following plugins: [rabbitmq_management_agent,cowlib,cowboy,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_web_dispatch,amqp_client,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_management,prometheus,amqp10_client,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_shovel,accept,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_auth_mechanism_ssl,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_shovel_management,
+2023-02-01 16:02:16.728236+00:00 [debug] <0.522.0>                                  rabbitmq_prometheus]
+2023-02-01 16:02:16.737901+00:00 [info] <0.440.0> rabbit on node rabbit@rabbitmq1 up
+2023-02-01 16:02:16.753005+00:00 [info] <0.440.0> rabbit on node rabbit@rabbitmq3 down
+2023-02-01 16:02:16.758009+00:00 [info] <0.440.0> Keeping rabbit@rabbitmq3 listeners: the node is already back
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0> Starting HTTP[S] listener with transport ranch_ssl, options [{port,15671},
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                              {versions,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                               ['tlsv1.3',
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                'tlsv1.2',
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                'tlsv1.1',
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                tlsv1]},
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                              {cacertfile,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                               "/etc/pki/tls/CACert.pem"},
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                              {keyfile,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                               "/etc/pki/tls/RMQ_DOCKERKey.pem"},
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                              {certfile,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                               "/etc/pki/tls/RMQ_DOCKERCert.pem"}] and protocol options #{sendfile =>
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                                                                              false}, stream handlers [rabbit_cowboy_stream_h,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                                                                                                       cowboy_compress_h,
+2023-02-01 16:02:16.786724+00:00 [debug] <0.583.0>                                                                                                                                                       cowboy_stream_h]
+2023-02-01 16:02:16.792289+00:00 [info] <0.591.0> Management plugin: HTTPS listener started on port 15671
+2023-02-01 16:02:16.792514+00:00 [info] <0.625.0> Statistics database started.
+2023-02-01 16:02:16.793095+00:00 [info] <0.624.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2023-02-01 16:02:16.816278+00:00 [debug] <0.653.0> Mirrored supervisor: initializing, overall supervisor <0.651.0> joined group rabbit_shovel_dyn_worker_sup_sup
+2023-02-01 16:02:16.816352+00:00 [debug] <0.653.0> Mirrored supervisor: known group rabbit_shovel_dyn_worker_sup_sup members: [] on nodes []
+2023-02-01 16:02:16.816376+00:00 [debug] <0.653.0> Mirrored supervisor: no known peer members in group rabbit_shovel_dyn_worker_sup_sup, will delete all child records for it
+2023-02-01 16:02:16.819713+00:00 [debug] <0.583.0> Starting HTTP[S] listener with transport ranch_tcp, options [{port,15692}] and protocol options #{sendfile =>
+2023-02-01 16:02:16.819713+00:00 [debug] <0.583.0>                                                                                                       false}, stream handlers [rabbit_cowboy_stream_h,
+2023-02-01 16:02:16.819713+00:00 [debug] <0.583.0>                                                                                                                                cowboy_compress_h,
+2023-02-01 16:02:16.819713+00:00 [debug] <0.583.0>                                                                                                                                cowboy_stream_h]
+2023-02-01 16:02:16.820984+00:00 [info] <0.665.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692
+2023-02-01 16:02:16.821333+00:00 [info] <0.522.0> Ready to start client connection listeners
+2023-02-01 16:02:16.821408+00:00 [debug] <0.522.0> Getting epmd port node 'rabbit', 10 retries left
+2023-02-01 16:02:16.824060+00:00 [debug] <0.522.0> Started Ranch
+2023-02-01 16:02:16.825068+00:00 [info] <0.709.0> started TCP listener on [::]:5672
+2023-02-01 16:02:16.828311+00:00 [info] <0.729.0> started TLS (SSL) listener on [::]:5671
+2023-02-01 16:02:16.888067+00:00 [debug] <0.522.0> Plugins discovery: ignoring getopt, not a RabbitMQ plugin
+2023-02-01 16:02:16.888147+00:00 [debug] <0.522.0> Plugins discovery: ignoring quantile_estimator, not a RabbitMQ plugin
+2023-02-01 16:02:17.001415+00:00 [debug] <0.522.0> Plugins discovery: ignoring getopt, not a RabbitMQ plugin
+2023-02-01 16:02:17.001493+00:00 [debug] <0.522.0> Plugins discovery: ignoring quantile_estimator, not a RabbitMQ plugin
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0> Server startup complete; 7 plugins started.
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_prometheus
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_shovel_management
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_auth_mechanism_ssl
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_shovel
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_management
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_web_dispatch
+2023-02-01 16:02:17.008783+00:00 [info] <0.522.0>  * rabbitmq_management_agent
+2023-02-01 16:02:17.009186+00:00 [debug] <0.522.0> Marking RabbitMQ as running
+2023-02-01 16:02:17.009925+00:00 [debug] <0.522.0> Change boot state to `ready`
+2023-02-01 16:02:17.010251+00:00 [debug] <0.133.0> Boot state/systemd: notifying of state `ready`
+2023-02-01 16:02:17.129260+00:00 [debug] <0.9.0> Time to start RabbitMQ: 14827879 us
+2023-02-01 16:02:17.550495+00:00 [info] <0.440.0> rabbit on node rabbit@rabbitmq1 up
+2023-02-01 16:02:17.839702+00:00 [info] <0.440.0> rabbit on node rabbit@rabbitmq3 up
+2023-02-01 16:02:18.887018+00:00 [debug] <0.227.0> Declared exchange 'amq.rabbitmq.log' in vhost '/'
+2023-02-01 16:02:18.887396+00:00 [info] <0.227.0> Logging to exchange 'amq.rabbitmq.log' in vhost '/' ready
+2023-02-01 18:20:56.575696+00:00 [debug] <0.2896.0> Recovering data for VHost <<"dev">>
+2023-02-01 18:20:56.575785+00:00 [info] <0.2896.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A' for vhost 'dev' exists
+2023-02-01 18:20:56.577320+00:00 [info] <0.2896.0> Setting segment_entry_count for vhost 'dev' with 0 queues to '2048'
+2023-02-01 18:20:56.579636+00:00 [info] <0.2896.0> Starting message stores for vhost 'dev'
+2023-02-01 18:20:56.580825+00:00 [info] <0.2900.0> Message store "DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2023-02-01 18:20:56.582054+00:00 [debug] <0.2900.0> Rebuilding message location index after unclean shutdown...
+2023-02-01 18:20:56.582093+00:00 [debug] <0.2900.0> Rebuilding message refcount...
+2023-02-01 18:20:56.582112+00:00 [debug] <0.2900.0> Done rebuilding message refcount
+2023-02-01 18:20:56.582454+00:00 [debug] <0.406.0> Rebuilding message location index from "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_transient/0.rdq" (0 file(s) remaining)
+2023-02-01 18:20:56.582732+00:00 [debug] <0.2900.0> Finished rebuilding index
+2023-02-01 18:20:56.583141+00:00 [info] <0.2896.0> Started message store of type transient for vhost 'dev'
+2023-02-01 18:20:56.583554+00:00 [info] <0.2904.0> Message store "DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2023-02-01 18:20:56.584875+00:00 [warning] <0.2904.0> Message store "DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_persistent": rebuilding indices from scratch
+2023-02-01 18:20:56.585205+00:00 [debug] <0.2904.0> Rebuilding message location index after unclean shutdown...
+2023-02-01 18:20:56.585302+00:00 [debug] <0.2904.0> Rebuilding message refcount...
+2023-02-01 18:20:56.585456+00:00 [debug] <0.2904.0> Done rebuilding message refcount
+2023-02-01 18:20:56.586164+00:00 [debug] <0.406.0> Rebuilding message location index from "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_persistent/0.rdq" (0 file(s) remaining)
+2023-02-01 18:20:56.586511+00:00 [debug] <0.2904.0> Finished rebuilding index
+2023-02-01 18:20:56.586961+00:00 [info] <0.2896.0> Started message store of type persistent for vhost 'dev'
+2023-02-01 18:20:56.588531+00:00 [info] <0.2896.0> Recovering 0 queues of type rabbit_classic_queue took 10ms
+2023-02-01 18:20:56.588675+00:00 [info] <0.2896.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2023-02-01 18:20:56.588890+00:00 [info] <0.2896.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2023-02-01 18:20:56.593341+00:00 [debug] <0.2896.0> rabbit_binding:recover/2 for vhost dev completed in 0.004376s
+2023-02-01 18:20:56.631420+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: ra_log:init recovered last_index_term {0,0} first index 0
+2023-02-01 18:20:56.633372+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: recover -> recover in term: 0 machine version: 2
+2023-02-01 18:20:56.633470+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: recovering state machine version 0:2 from index 0 to 0
+2023-02-01 18:20:56.633668+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: recovery of state machine version 0:2 from index 0 to 0 took 0ms
+2023-02-01 18:20:56.633701+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: recover -> recovered in term: 0 machine version: 2
+2023-02-01 18:20:56.633807+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: recovered -> follower in term: 0 machine version: 2
+2023-02-01 18:20:56.644526+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: granting pre-vote for {rabbit_stream_coordinator,rabbit@rabbitmq1} machine version (their:ours) 2:2 with last indexterm {0,0} for term 0 previous term 0
+2023-02-01 18:20:56.656238+00:00 [info] <0.2942.0> rabbit_stream_coordinator: granting vote for {rabbit_stream_coordinator,rabbit@rabbitmq1} with last indexterm {0,0} for term 1 previous term was 0
+2023-02-01 18:20:56.662761+00:00 [info] <0.2942.0> rabbit_stream_coordinator: detected a new leader {rabbit_stream_coordinator,rabbit@rabbitmq1} in term 1
+2023-02-01 18:20:56.666606+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: enabling ra cluster changes in 1
+2023-02-01 18:20:56.666780+00:00 [debug] <0.2942.0> rabbit_stream_coordinator: applying new machine version 2 current 0
+2023-02-01 18:20:56.666816+00:00 [info] <0.2942.0> Stream coordinator machine version changes from 0 to 2, applying incremental upgrade.
+2023-02-01 18:20:56.666981+00:00 [info] <0.2942.0> Stream coordinator machine version changes from 0 to 1, no state changes required.
+2023-02-01 18:20:56.667085+00:00 [info] <0.2942.0> Stream coordinator machine version changes from 1 to 2, updating state.
+2023-02-01 18:20:56.698921+00:00 [debug] <0.2946.0> osiris_log: init_acceptor __q_monitoring_1675275656625579622 from epoch offsets: [] range empty
+2023-02-01 18:20:56.699005+00:00 [info] <0.2946.0> Stream: __q_monitoring_1675275656625579622 will use /var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/stream/__q_monitoring_1675275656625579622 for osiris log data directory
+2023-02-01 18:20:56.699496+00:00 [debug] <0.2946.0> osiris_log:init/1 stream __q_monitoring_1675275656625579622 max_segment_size_bytes: 500000000,
+2023-02-01 18:20:56.699496+00:00 [debug] <0.2946.0>            max_segment_size_chunks 256000, retention []
+2023-02-01 18:20:56.700490+00:00 [debug] <0.2946.0> osiris_log: open_new_segment __q_monitoring_1675275656625579622: 00000000000000000000.segment
+2023-02-01 18:20:56.701656+00:00 [info] <0.2946.0> __q_monitoring_1675275656625579622 [osiris_replica:init/1] next offset 0, tail info {0,empty}
+2023-02-01 18:20:56.704487+00:00 [debug] <0.2946.0> __q_monitoring_1675275656625579622 [osiris_replica:init/1] replica resolved host endpoints: [{172,20,0,4},[114,97,98,98,105,116,109,113,50]]
+2023-02-01 18:20:56.704789+00:00 [debug] <0.2946.0> __q_monitoring_1675275656625579622 [osiris_replica:init/1] replica using 'tcp' transport for replication
+2023-02-01 18:20:56.711578+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': ra_log:init recovered last_index_term {0,0} first index 0
+2023-02-01 18:20:56.715465+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': recover -> recover in term: 0 machine version: 2
+2023-02-01 18:20:56.715572+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': recovering state machine version 0:2 from index 0 to 0
+2023-02-01 18:20:56.715610+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': recovery of state machine version 0:2 from index 0 to 0 took 0ms
+2023-02-01 18:20:56.715706+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': recover -> recovered in term: 0 machine version: 2
+2023-02-01 18:20:56.715744+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': recovered -> follower in term: 0 machine version: 2
+2023-02-01 18:20:56.726719+00:00 [debug] <0.2946.0> __q_monitoring_1675275656625579622 [osiris_replica:handle_info/2] EXIT received for #Port<0.1496> with 'normal'
+2023-02-01 18:20:56.726980+00:00 [debug] <0.2946.0> __q_monitoring_1675275656625579622 [osiris_replica:handle_info/2] EXIT received for <0.2957.0> with 'normal'
+2023-02-01 18:20:56.740422+00:00 [info] <0.2961.0> queue 'q_notification' in vhost '/': leader call - leader not known. Command will be forwarded once leader is known.
+2023-02-01 18:20:56.744902+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': granting pre-vote for {'%2F_q_notification',rabbit@rabbitmq1} machine version (their:ours) 2:2 with last indexterm {0,0} for term 0 previous term 0
+2023-02-01 18:20:56.753831+00:00 [info] <0.2961.0> queue 'q_notification' in vhost '/': granting vote for {'%2F_q_notification',rabbit@rabbitmq1} with last indexterm {0,0} for term 1 previous term was 0
+2023-02-01 18:20:56.761966+00:00 [info] <0.2961.0> queue 'q_notification' in vhost '/': detected a new leader {'%2F_q_notification',rabbit@rabbitmq1} in term 1
+2023-02-01 18:20:56.762106+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': ra_log:init recovered last_index_term {0,0} first index 0
+2023-02-01 18:20:56.766003+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': enabling ra cluster changes in 1
+2023-02-01 18:20:56.766072+00:00 [debug] <0.2961.0> queue 'q_notification' in vhost '/': applying new machine version 2 current 0
+2023-02-01 18:20:56.767111+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': recover -> recover in term: 0 machine version: 2
+2023-02-01 18:20:56.767538+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': recovering state machine version 0:2 from index 0 to 0
+2023-02-01 18:20:56.767579+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': recovery of state machine version 0:2 from index 0 to 0 took 0ms
+2023-02-01 18:20:56.767609+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': recover -> recovered in term: 0 machine version: 2
+2023-02-01 18:20:56.767643+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': recovered -> follower in term: 0 machine version: 2
+2023-02-01 18:20:56.770226+00:00 [info] <0.2969.0> queue 'q_call_center' in vhost '/': leader call - leader not known. Command will be forwarded once leader is known.
+2023-02-01 18:20:56.774940+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': granting pre-vote for {'%2F_q_call_center',rabbit@rabbitmq1} machine version (their:ours) 2:2 with last indexterm {0,0} for term 0 previous term 0
+2023-02-01 18:20:56.780039+00:00 [info] <0.2969.0> queue 'q_call_center' in vhost '/': granting vote for {'%2F_q_call_center',rabbit@rabbitmq1} with last indexterm {0,0} for term 1 previous term was 0
+2023-02-01 18:20:56.783798+00:00 [info] <0.2969.0> queue 'q_call_center' in vhost '/': detected a new leader {'%2F_q_call_center',rabbit@rabbitmq1} in term 1
+2023-02-01 18:20:56.792600+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': ra_log:init recovered last_index_term {0,0} first index 0
+2023-02-01 18:20:56.796347+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': enabling ra cluster changes in 1
+2023-02-01 18:20:56.796518+00:00 [debug] <0.2969.0> queue 'q_call_center' in vhost '/': applying new machine version 2 current 0
+2023-02-01 18:20:56.796657+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': recover -> recover in term: 0 machine version: 2
+2023-02-01 18:20:56.796711+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': recovering state machine version 0:2 from index 0 to 0
+2023-02-01 18:20:56.796733+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': recovery of state machine version 0:2 from index 0 to 0 took 0ms
+2023-02-01 18:20:56.796803+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': recover -> recovered in term: 0 machine version: 2
+2023-02-01 18:20:56.796931+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': recovered -> follower in term: 0 machine version: 2
+2023-02-01 18:20:56.799686+00:00 [info] <0.2976.0> queue 'q_billing' in vhost '/': leader call - leader not known. Command will be forwarded once leader is known.
+2023-02-01 18:20:56.803761+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': granting pre-vote for {'%2F_q_billing',rabbit@rabbitmq1} machine version (their:ours) 2:2 with last indexterm {0,0} for term 0 previous term 0
+2023-02-01 18:20:56.808680+00:00 [info] <0.2976.0> queue 'q_billing' in vhost '/': granting vote for {'%2F_q_billing',rabbit@rabbitmq1} with last indexterm {0,0} for term 1 previous term was 0
+2023-02-01 18:20:56.811777+00:00 [info] <0.2976.0> queue 'q_billing' in vhost '/': detected a new leader {'%2F_q_billing',rabbit@rabbitmq1} in term 1
+2023-02-01 18:20:56.820274+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': enabling ra cluster changes in 1
+2023-02-01 18:20:56.820387+00:00 [debug] <0.2976.0> queue 'q_billing' in vhost '/': applying new machine version 2 current 0
+2023-02-01 18:25:33.136491+00:00 [info] <0.3842.0> Stopping vhost supervisor <0.2895.0> for vhost 'dev'
+2023-02-01 18:25:33.137896+00:00 [info] <0.2904.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_persistent'
+2023-02-01 18:25:33.144209+00:00 [info] <0.2904.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_persistent' is stopped
+2023-02-01 18:25:33.144809+00:00 [info] <0.2900.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_transient'
+2023-02-01 18:25:33.149294+00:00 [info] <0.2900.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A/msg_store_transient' is stopped
+2023-02-01 18:25:33.150332+00:00 [info] <0.3842.0> Deleting message store directory for vhost 'dev' at '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/DPC7KP7WBND5MYPZUVRYRSA6A'
+2023-02-01 18:25:44.563917+00:00 [debug] <0.3894.0> Recovering data for VHost <<"sec">>
+2023-02-01 18:25:44.563999+00:00 [info] <0.3894.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/6VT49OEJRT1IC607EK7LPWC1Z' for vhost 'sec' exists
+2023-02-01 18:25:44.565626+00:00 [info] <0.3894.0> Setting segment_entry_count for vhost 'sec' with 0 queues to '2048'
+2023-02-01 18:25:44.568296+00:00 [info] <0.3894.0> Starting message stores for vhost 'sec'
+2023-02-01 18:25:44.568938+00:00 [info] <0.3898.0> Message store "6VT49OEJRT1IC607EK7LPWC1Z/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2023-02-01 18:25:44.570995+00:00 [debug] <0.3898.0> Rebuilding message location index after unclean shutdown...
+2023-02-01 18:25:44.571156+00:00 [debug] <0.3898.0> Rebuilding message refcount...
+2023-02-01 18:25:44.571180+00:00 [debug] <0.3898.0> Done rebuilding message refcount
+2023-02-01 18:25:44.572369+00:00 [debug] <0.406.0> Rebuilding message location index from "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/6VT49OEJRT1IC607EK7LPWC1Z/msg_store_transient/0.rdq" (0 file(s) remaining)
+2023-02-01 18:25:44.572619+00:00 [debug] <0.3898.0> Finished rebuilding index
+2023-02-01 18:25:44.572880+00:00 [info] <0.3894.0> Started message store of type transient for vhost 'sec'
+2023-02-01 18:25:44.573499+00:00 [info] <0.3902.0> Message store "6VT49OEJRT1IC607EK7LPWC1Z/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2023-02-01 18:25:44.575285+00:00 [warning] <0.3902.0> Message store "6VT49OEJRT1IC607EK7LPWC1Z/msg_store_persistent": rebuilding indices from scratch
+2023-02-01 18:25:44.575691+00:00 [debug] <0.3902.0> Rebuilding message location index after unclean shutdown...
+2023-02-01 18:25:44.575804+00:00 [debug] <0.3902.0> Rebuilding message refcount...
+2023-02-01 18:25:44.576169+00:00 [debug] <0.3902.0> Done rebuilding message refcount
+2023-02-01 18:25:44.576513+00:00 [debug] <0.406.0> Rebuilding message location index from "/var/lib/rabbitmq/mnesia/rabbit@rabbitmq2/msg_stores/vhosts/6VT49OEJRT1IC607EK7LPWC1Z/msg_store_persistent/0.rdq" (0 file(s) remaining)
+2023-02-01 18:25:44.576805+00:00 [debug] <0.3902.0> Finished rebuilding index
+2023-02-01 18:25:44.577091+00:00 [info] <0.3894.0> Started message store of type persistent for vhost 'sec'
+2023-02-01 18:25:44.577250+00:00 [info] <0.3894.0> Recovering 0 queues of type rabbit_classic_queue took 10ms
+2023-02-01 18:25:44.577943+00:00 [info] <0.3894.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2023-02-01 18:25:44.578094+00:00 [info] <0.3894.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2023-02-01 18:25:44.581011+00:00 [debug] <0.3894.0> rabbit_binding:recover/2 for vhost sec completed in 0.002810s

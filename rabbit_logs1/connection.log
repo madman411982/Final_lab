@@ -1,0 +1,2 @@
+2023-02-01 18:25:33.117535+00:00 [info] <0.4399.0> Closing all connections in vhost 'dev' because it's being deleted
+2023-02-01 18:25:33.158255+00:00 [info] <0.4400.0> Closing all connections in vhost 'dev' on node 'rabbit@rabbitmq1' because the vhost is stopping

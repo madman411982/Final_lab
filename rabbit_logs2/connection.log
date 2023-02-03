@@ -1,1 +1,9 @@
 2023-02-01 18:25:33.137416+00:00 [info] <0.3843.0> Closing all connections in vhost 'dev' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:12:50.225331+00:00 [info] <0.29023.5> Closing all connections in vhost '/' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:12:50.225421+00:00 [info] <0.29024.5> Closing all connections in vhost 'sec' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:15:23.880268+00:00 [info] <0.1419.0> Closing all connections in vhost 'sec' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:15:23.884783+00:00 [info] <0.1422.0> Closing all connections in vhost '/' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:24:17.854106+00:00 [info] <0.2692.0> Closing all connections in vhost 'sec' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-02 16:24:17.854195+00:00 [info] <0.2693.0> Closing all connections in vhost '/' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-03 09:12:45.074609+00:00 [info] <0.6090.4> Closing all connections in vhost 'sec' on node 'rabbit@rabbitmq2' because the vhost is stopping
+2023-02-03 09:12:45.074792+00:00 [info] <0.6091.4> Closing all connections in vhost '/' on node 'rabbit@rabbitmq2' because the vhost is stopping

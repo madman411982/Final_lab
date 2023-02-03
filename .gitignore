@@ -15,3 +15,5 @@ dashboards/rabbitmq-exporter_vs_rabbitmq-prometheus.json
 dashboards/RabbitMQ-Overview.json
 dashboards/RabbitMQ-PerfTest.json
 dashboards/RabbitMQ-Quorum-Queues-Raft.json
+rabbit_logs1/erl_crash.dump
+rabbit_logs3/erl_crash.dump
